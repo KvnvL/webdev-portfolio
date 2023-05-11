@@ -1,0 +1,17 @@
+[
+    {
+        "link": "Home",
+        "linkTo": "homeComp",
+        "inMenu": true
+    },
+    {
+        "link": "About me",
+        "linkTo": "aboutComp",
+        "inMenu": true
+    },
+    {
+        "link": "Portfolio",
+        "linkTo": "portfolioComp",
+        "inMenu": true
+    }
+]

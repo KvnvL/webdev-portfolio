@@ -1,0 +1,42 @@
+.contact {
+  background-color: var(--secondary);
+  scroll-margin-top: 2rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  * {
+    color: var(--primary);
+  }
+
+  .button {
+    h2 {
+      margin: 0 auto;
+      margin-top: 2rem;
+      cursor: pointer;
+      padding: .75rem 7.5rem;
+      width: max-content;
+      background-color: var(--tertiary);
+      color: var(--secondary);
+      border-radius: 1.75rem;
+      border: solid 5px #babdf8;
+      transition: 0.4s all ease-in-out;
+      box-shadow: var(--tertiary) 0rem 0rem;
+
+      &:hover {
+        transform: translate(-0.1rem, -0.5rem);
+        box-shadow: var(--tertiary) 0.1rem 0.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    .button {
+      h2 {
+        padding: .75rem 0;
+        width: 70%;
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.aboutMe {
+  background-color: var(--secondary);
+  scroll-margin-top: 2rem;
+  position: relative;
+
+  @media (max-width: 850px) {
+    scroll-margin-top: 4rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  * {
+    color: var(--primary);
+  }
+
+  .innerContainer {
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+
+    .leftSide {
+      width: 50%;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      gap: 5rem;
+
+      p {
+        margin-top: 1rem;
+      }
+
+      .slider {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        box-sizing: border-box;
+        position: relative;
+
+        @keyframes marquee {
+          0% {
+            transform: translateX(0);
+          }
+
+          100% {
+            transform: translate(-100%);
+          }
+        }
+
+        .skills {
+          display: flex;
+          align-items: center;
+          animation: marquee 20s linear infinite running;
+
+          img {
+            width: 5rem;
+            margin: 0 1.5rem;
+            filter: grayscale(1);
+            transition: 0.3s ease-in-out all;
+
+            &:hover {
+              filter: grayscale(0);
+            }
+
+            @media (max-width: 850px) {
+              width: 3.5rem;
+              margin: 0 1rem;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 1050px) {
+        width: 40%;
+      }
+    }
+
+    .rightSide {
+      width: 40%;
+      aspect-ratio: 5 / 4;
+      object-fit: cover;
+      transition: 0.4s ease-in-out all;
+      filter: grayscale(1);
+
+      &:hover {
+        box-shadow: 0 0 1.5rem 0 rgba($color: #000, $alpha: 0.1);
+        filter: grayscale(0);
+      }
+
+      @media (max-width: 1050px) {
+        width: 25rem;
+      }
+    }
+
+    @media (max-width: 850px) {
+      flex-flow: column;
+      gap: 4rem;
+      padding-top: 2rem;
+
+      .leftSide {
+        width: 100%;
+      }
+
+      .rightSide {
+        width: 80%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .rightSide {
+        width: 100%;
+      }
+    }
+  }
+}

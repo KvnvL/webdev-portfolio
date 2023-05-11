@@ -1,0 +1,24 @@
+.portfolio {
+  background-color: var(--secondary);
+  scroll-margin-top: 2rem;
+  
+  @media (max-width: 850px) {
+    scroll-margin-top: 4rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  * {
+    color: var(--primary);
+  }
+
+  .innerContainer {
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    gap: 5rem;
+  }
+}

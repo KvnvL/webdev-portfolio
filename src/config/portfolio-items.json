@@ -1,0 +1,24 @@
+[
+    {
+        "project": "kevinvloon.nl fotografie",
+        "description": "As you may have guessed, this is my other website. In my spare time I enjoy taking pictures. Mainly I like to photograph cars, but when I go somewhere I also like to take my camera with me.",
+        "tools": [
+            "React.js",
+            "Node.js"
+        ],
+        "image": "images/portfolio-items/kevinvloon-nl-full.png",
+        "link": "https://kevinvloon.nl"
+    },
+    {
+        "project": "M.T.C.Vlijmen",
+        "description": "M.T.C.Vlijmen is a local motorcycle club from North Brabant. This club asked me if I could make a new website that was also available for mobile. There was also a wish to be able to easily edit text themself, so I created a system where they can easily edit a text document and automatically adjust the text on the website.",
+        "tools": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "PHP"
+        ],
+        "image": "images/portfolio-items/mtcvlijmen-full.png",
+        "link": "https://mtcvlijmen.nl/"
+    }
+]

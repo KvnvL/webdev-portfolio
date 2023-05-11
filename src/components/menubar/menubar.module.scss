@@ -1,0 +1,126 @@
+.menubar {
+  background-color: var(--primary);
+  font-family: var(--headline);
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+
+  * {
+    color: var(--secondary);
+  }
+
+  
+  a {
+    transition: 0.3s ease-in-out all;
+    font-size: var(--fs-h4);
+    &.active {
+      color: var(--tertiary);
+    }
+  }
+
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      height: 3rem;
+      cursor: pointer;
+    }
+
+    .menuList {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .hamburger {
+      display: none;
+      transform: rotate(180deg);
+    }
+
+    .hamburger:hover {
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 2rem;
+      height: 0.2rem;
+      background-color: var(--secondary);
+      margin: 0.45rem 0rem;
+      transition: all ease-in-out 0.6s;
+    }
+
+    .hamburger div:hover {
+      cursor: pointer;
+    }
+
+    .hamburger div:first-child {
+      margin-top: 0;
+    }
+
+    .hamburger div:last-child {
+      margin-bottom: 0;
+    }
+
+    .hamburger.open div:not(:first-child, :last-child) {
+      transform: translate(-80px);
+      background: transparent;
+    }
+
+    .hamburger.open div:first-child {
+      transform: rotate(405deg) translate(0.4rem, 0.5rem);
+    }
+
+    .hamburger.open div:last-child {
+      transform: rotate(-405deg) translate(0.4rem, -0.5rem);
+    }
+  }
+
+  .phoneNav {
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--primary);
+    transform: translate(110vw);
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    transition: 0.5s ease-in-out;
+
+    &.open {
+      transform: translate(55vw);
+    }
+
+    ul {
+      margin-top: 1rem;
+      list-style: none;
+      text-align: right;
+    }
+
+    ul li {
+      margin: 1rem 0;
+    }
+
+    ul li a {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .menubar {
+    .container {
+      .menuList {
+        display: none;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+:root {
+  /* colors */
+  --primary: #111111;
+  --secondary: #ffffff;
+  --tertiary: #9ea3f5;
+  --inputBg: #e3e3e3;
+
+  /* Font */
+  --headline: "Poppins", sans-serif;
+  --text: "Roboto", sans-serif;
+
+  /* Font size */
+  --fs-base: 1rem;
+  --fs-h1: 4.5rem; /* Headline 1 */
+  --fs-h2: 2rem; /* Headline 2 */
+  --fs-h3: 1.5rem; /* Headline 3 */
+  --fs-h4: 1.25rem; /* Headline 4 */
+  --fs-h5: 1.125rem; /* Headline 5 */
+
+  --fs-li: 1.2rem; /* List item */
+
+  /* Font weight */
+  --fw-light: 300;
+  --fw-medium: 400;
+  --fw-regular: 500;
+  --fw-semi: 600;
+  --fw-bold: 700;
+
+  --overlay: rgba(0, 0, 0, 0.7);
+
+  --max-width: 1300px;
+}
+
+@media (max-width: 1050px) {
+  :root {
+    --fs-h1: 3.5rem; /* Headline 1 */
+    --fs-h2: 1.8rem; /* Headline 2 */
+  }
+}
+
+@media (max-width: 850px){
+  :root {
+    --fs-h1: 3rem; /* Headline 1 */
+  }
+}
+
+@media (max-width: 700px){
+  :root {
+    --fs-h1: 2.25rem; /* Headline 1 */
+    --fs-h2: 1.3rem; /* Headline 2 */
+    --fs-h3: 1.1rem; /* Headline 3 */
+  }
+}
