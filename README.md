@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# Git repo web developer portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+
+### About me
+
+Hi, my name is Kevin, I'm a 19 year old student front-end developer from the Netherlands. About 3 years ago I started my IT journey as a ICT & Media Design student at Fontys Hogeschool in Tilburg. I was really interested in front-end web development since the start of this journey and I'm still learning more and more.
+
+### Project
+
+This project contains my web development portfolio website. I built this so I could easily share my created websites with those who are interested. I have built this website using ReactJS. The packages I have used are:
+- React router
+- AOS
+- Classnames
+- Tsparticles
+
+### Website
+
+The website is currently live and can be found by [this link](https://kevinvloon.nl/webdev/).
+
+![]()
 
 ## Available Scripts
 
@@ -8,7 +26,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the projecr in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
@@ -21,7 +39,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the project for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
