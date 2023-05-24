@@ -18,15 +18,19 @@ This project contains my web development portfolio website. I built this so I co
 
 The website is currently live and can be found by [this link](https://kevinvloon.nl/webdev/).
 
-![]()
+![](webdev.png)
 
 ## Available Scripts
 
 In the project directory, you can run:
 
+### `npm install` or `npm i`
+
+When you have just cloned the project or use it for the first time, you first have to install all the packages.
+
 ### `npm start`
 
-Runs the projecr in the development mode.\
+Runs the project in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
